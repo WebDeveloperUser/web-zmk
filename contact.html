@@ -161,3 +161,172 @@
     </footer>
 </body>
 </html>
+\
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - ZMK TRADE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            height: 30px;
+        }
+        nav {
+            margin: 10px;
+            text-align: right;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #e60000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+        }
+        .contacts {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .contact-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+            flex: 1 1 calc(33.333% - 20px);
+            margin: 10px;
+        }
+        .contact-card:hover {
+            transform: scale(1.05);
+        }
+        .contact-info {
+            padding: 10px;
+        }
+        .contact-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e60000;
+            margin: 10px 0;
+        }
+        .contact-details {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+        .map {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .map iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        .logo {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .logo img {
+            height: 80px;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./style/images/logo.jpg" alt="ZMK TRADE Logo">
+        <h1>ZMK TRADE</h1>
+        <p>Кровельные и фасадные материалы</p>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О компании</a>
+            <a href="products.html">Продукция</a>
+            <a href="services.html">Услуги</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Контакты</h2>
+        <p>Наши менеджеры, выезжают на объекты и выполняют функции представителя, контролируют отгрузку в соответствии с контрактом и отгрузочными документами.
+            В ходе отгрузки менеджер проверяет качество продукции, ассортимент и количество.<br>Наша компания постоянно улучшает все аспекты наших услуг, включая сроки выполнения, качество и честные цены. Обеспечение отличного уровня сервиса - наш главный приоритет.<br>Выезд наших сотрудников, а так же замер и расчёт - БЕСПЛАТНО!</p>
+        <div class="contacts">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <div class="contact-title">⏰Наш график работы</div>
+                    <div class="contact-details">ПН-ПТ с 9:00 до 18:00</div>
+                    <div class="contact-details">СБ с 9:00 до 13:00</div>
+                    <div class="contact-details">ВОСКРЕСЕНЬЕ ВЫХОДНОЙ</div>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-info">
+                    <div class="contact-title">Любовь</div>
+                    <div class="contact-details">Менеджер</div>
+                    <div class="contact-details">Телефон: 8 778 600 0638</div>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-info">
+                    <div class="contact-title">Анна</div>
+                    <div class="contact-details">Менеджер</div>
+                    <div class="contact-details">Телефон: 8 747 808 7298</div>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-info">
+                    <div class="contact-title">Евгения</div>
+                    <div class="contact-details">Менеджер</div>
+                    <div class="contact-details">Телефон: 8 705 237 5862</div>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <h3>Наше местоположение</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1219.6250526719218!2d76.94210853902126!3d52.31146399300181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTLCsDE4JzQxLjMiTiA3NsKwNTYnMzYuMiJF!5e0!3m2!1sru!2skz!4v1716189413641!5m2!1sru!2skz" allowfullscreen></iframe>
+        </div>
+        <div class="logo">
+            <img src="./style/images/logo.jpg" alt="ZMK TRADE Logo">
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 ZMK TRADE. Все права защищены.
+    </footer>
+</body>
+</html>
+
