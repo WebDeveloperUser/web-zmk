@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - ZMK TRADE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 40px;
+        }
+        nav {
+            margin: 20px;
+            text-align: right;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #e60000;
+        }
+        .hero {
+            background: url('hero.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            padding: 40px 0;
+            text-align: center;
+        }
+        .section:nth-of-type(even) {
+            background-color: #f4f4f4;
+        }
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .buttons a {
+            background-color: #e60000;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .buttons a:hover {
+            background-color: #cc0000;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./style/images/logo.jpg" alt="ZMK TRADE Logo">
+        <h1>ZMK TRADE</h1>
+        <p>Кровельные и фасадные материалы</p>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О компании</a>
+            <a href="products.html">Продукция</a>
+            <a href="services.html">Услуги</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1>Добро пожаловать в ZMK TRADE</h1>
+    </div>
+    <div class="container">
+        <div class="section" id="about">
+            <h2>О компании</h2>
+            <p>Компания ZMK TRADE была основана в 2000 году и с тех пор зарекомендовала себя как надежный поставщик кровельных и фасадных материалов. Мы работаем на рынке строительных материалов уже более 20 лет и предлагаем только качественные товары.</p>
+            <div class="buttons">
+                <a href="about.html">Узнать больше</a>
+            </div>
+        </div>
+        <div class="section" id="products">
+            <h2>Продукция</h2>
+            <p>Мы предлагаем широкий ассортимент кровельных и фасадных материалов, включая металлочерепицу, профнастил, металлосайдинг и сэндвич-панели.</p>
+            <div class="buttons">
+                <a href="products.html">Каталог продукции</a>
+            </div>
+        </div>
+        <div class="section" id="services">
+            <h2>Услуги</h2>
+            <p>Наша компания предоставляет услуги по изготовлению доборных элементов, монтажу кровли, установке сайдинга и утеплению сэндвич-панелями.</p>
+            <div class="buttons">
+                <a href="services.html">Подробнее об услугах</a>
+            </div>
+        </div>
+        <div class="section" id="contact">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами для получения консультации и заказа продукции. Мы всегда готовы ответить на ваши вопросы.</p>
+            <div class="buttons">
+                <a href="contact.html">Связаться с нами</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 ZMK TRADE. Все права защищены.
+    </footer>
+</body>
+</html>

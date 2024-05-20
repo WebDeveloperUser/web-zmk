@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - ZMK TRADE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            text-align: right;
+        }
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #e60000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .service-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service-info {
+            padding: 10px;
+        }
+        .service-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e60000;
+            margin: 10px 0;
+        }
+        .service-description {
+            font-size: 14px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ZMK TRADE</h1>
+        <p>Кровельные и фасадные материалы</p>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О компании</a>
+        <a href="products.html">Продукция</a>
+        <a href="services.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
+    </nav>
+    <div class="container">
+        <h2>Наши услуги</h2>
+        <div class="service-grid">
+            <div class="service-card" onclick="openModal('service1')">
+                <img src="./style/images/createdobormat.png" alt="Изготовление доборных элементов" class="service-image">
+                <div class="service-info">
+                    <div class="service-title">Изготовление доборных элементов</div>
+                    <div class="service-description">Изготовление элементов любой сложности.</div>
+                </div>
+            </div>
+            <div class="service-card" onclick="openModal('service2')">
+                <img src="./style/images/montajkrovli.jpg" alt="Монтаж кровли" class="service-image">
+                <div class="service-info">
+                    <div class="service-title">Монтаж кровли</div>
+                    <div class="service-description">Профессиональный монтаж кровельных материалов.</div>
+                </div>
+            </div>
+            <div class="service-card" onclick="openModal('service3')">
+                <img src="./style/images/installsiding.jpg" alt="Установка сайдинга" class="service-image">
+                <div class="service-info">
+                    <div class="service-title">Установка сайдинга</div>
+                    <div class="service-description">Качественная установка сайдинга для фасадов.</div>
+                </div>
+            </div>
+            <div class="service-card" onclick="openModal('service4')">
+                <img src="./style/images/sandvich2.jpg" alt="Утепление сэндвич-панелями" class="service-image">
+                <div class="service-info">
+                    <div class="service-title">Утепление сэндвич-панелями</div>
+                    <div class="service-description">Эффективное утепление зданий сэндвич-панелями.</div>
+                </div>
+            </div>
+            <!-- Добавьте больше карточек по мере необходимости -->
+        </div>
+    </div>
+
+    <!-- Модальные окна -->
+    <div id="service1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('service1')">&times;</span>
+            <h2>Изготовление доборных элементов</h2>
+            <p><strong>Описание:</strong> Изготовление доборных элементов любой сложности по индивидуальным заказам.</p>
+            <p><strong>Условия выполнения:</strong> Заказы принимаются по чертежам клиентов.</p>
+            <p><strong>Сроки:</strong> 3-5 рабочих дней.</p>
+            <p><strong>Цена:</strong> От 500 руб. за элемент.</p>
+            <p><strong>Материалы:</strong> Металл, оцинковка, покрытие по выбору.</p>
+        </div>
+    </div>
+
+    <div id="service2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('service2')">&times;</span>
+            <h2>Монтаж кровли</h2>
+            <p><strong>Описание:</strong> Профессиональный монтаж кровельных материалов.</p>
+            <p><strong>Условия выполнения:</strong> Работаем круглый год.</p>
+            <p><strong>Сроки:</strong> Зависит от объема работы, обычно 1-2 недели.</p>
+            <p><strong>Цена:</strong> От 1000 руб. за м².</p>
+            <p><strong>Материалы:</strong> Металлочерепица, профнастил, другие материалы по запросу.</p>
+        </div>
+    </div>
+
+    <div id="service3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('service3')">&times;</span>
+            <h2>Установка сайдинга</h2>
+            <p><strong>Описание:</strong> Качественная установка сайдинга для фасадов.</p>
+            <p><strong>Условия выполнения:</strong> Возможна работа в зимний период.</p>
+            <p><strong>Сроки:</strong> 2-4 недели в зависимости от площади фасада.</p>
+            <p><strong>Цена:</strong> От 900 руб. за м².</p>
+            <p><strong>Материалы:</strong> Металлосайдинг, виниловый сайдинг, другие материалы по запросу.</p>
+        </div>
+    </div>
+
+    <div id="service4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('service4')">&times;</span>
+            <h2>Утепление сэндвич-панелями</h2>
+            <p><strong>Описание:</strong> Эффективное утепление зданий сэндвич-панелями.</p>
+            <p><strong>Условия выполнения:</strong> Предварительный осмотр объекта.</p>
+            <p><strong>Сроки:</strong> 1-2 недели.</p>
+            <p><strong>Цена:</strong> От 1300 руб. за м².</p>
+            <p><strong>Материалы:</strong> Сэндвич-панели, крепежные элементы.</p>
+        </div>
+    </div>
+    <script src="./style/js/javascript.js"></script>
+    <footer>
+        &copy; 2024 ZMK TRADE. Все права защищены.
+    </footer>
+</body>
+</html>

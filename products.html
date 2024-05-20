@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукция - ZMK TRADE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            text-align: right;
+        }
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #e60000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 10px;
+        }
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e60000;
+            margin: 10px 0;
+        }
+        .product-description {
+            font-size: 14px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .product-price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ZMK TRADE</h1>
+        <p>Кровельные и фасадные материалы</p>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О компании</a>
+        <a href="products.html">Продукция</a>
+        <a href="services.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
+    </nav>
+    <div class="container">
+        <h2>Наша продукция</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="./style/images/metallocherepica.png" alt="Металлочерепица" class="product-image">
+                <div class="product-info">
+                    <div class="product-title">Металлочерепица</div>
+                    <div class="product-description">Высококачественная металлочерепица для кровли.</div>
+                    <div class="product-price">Цена: 3000 тг/м²</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./style/images/profnastil.jpg" alt="Профнастил" class="product-image">
+                <div class="product-info">
+                    <div class="product-title">Профнастил</div>
+                    <div class="product-description">Надежный профнастил для фасадов и крыш.</div>
+                    <div class="product-price">Цена: 4500 тг/м²</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./style/images/metallosiding.png" alt="Металлосайдинг" class="product-image">
+                <div class="product-info">
+                    <div class="product-title">Металлосайдинг</div>
+                    <div class="product-description">Эстетичный и долговечный металлосайдинг.</div>
+                    <div class="product-price">Цена: 6000 тг/м²</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./style/images/sandichpanels.png" alt="Сэндвич-панели" class="product-image">
+                <div class="product-info">
+                    <div class="product-title">Сэндвич-панели</div>
+                    <div class="product-description">Эффективные сэндвич-панели для утепления.</div>
+                    <div class="product-price">Цена: 8600 тг/м²</div>
+                </div>
+            </div>
+            <!-- Добавьте больше карточек по мере необходимости -->
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2024 ZMK TRADE. Все права защищены.
+    </footer>
+</body>
+</html>

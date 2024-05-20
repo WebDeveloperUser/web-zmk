@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании - ZMK TRADE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            text-align: right;
+        }
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #e60000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .about-image {
+            flex: 1;
+            max-width: 50%;
+        }
+        .about-image img {
+            width: 100%;
+            height: auto;
+        }
+        .about-text {
+            flex: 1;
+            max-width: 50%;
+            padding: 20px;
+        }
+        .team-section {
+            margin-top: 40px;
+        }
+        .team-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .team-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .team-card:hover {
+            transform: scale(1.05);
+        }
+        .team-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .team-info {
+            padding: 10px;
+        }
+        .team-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e60000;
+            margin: 10px 0;
+        }
+        .team-position {
+            font-size: 16px;
+            color: #333;
+            margin: 5px 0;
+        }
+        .team-details {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ZMK TRADE</h1>
+        <p>Кровельные и фасадные материалы</p>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О компании</a>
+        <a href="products.html">Продукция</a>
+        <a href="services.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
+    </nav>
+    <div class="container">
+        <div class="about-section">
+            <div class="about-image">
+                <img src="./style/images/company-building.jpg" alt="Компания ZMK TRADE">
+            </div>
+            <div class="about-text">
+                <h2>История компании</h2>
+                <p>Компания ZMK TRADE была основана в 2000 году и с тех пор зарекомендовала себя как надежный поставщик кровельных и фасадных материалов. Наше предприятие постоянно развивается и внедряет новые технологии в производстве и обслуживании клиентов.</p>
+                <p>На протяжении 20 лет мы работаем на рынке строительных материалов и предоставляем только качественные и проверенные товары. Наша миссия - обеспечить наших клиентов лучшими материалами для строительства и ремонта.</p>
+            </div>
+        </div>
+        <div class="team-section">
+            <div class="team-header">
+                <h2>Наша команда</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="./style/images/ceo.jpg" alt="Руководитель" class="team-image">
+                    <div class="team-info">
+                        <div class="team-name">Иван Иванов</div>
+                        <div class="team-position">Генеральный директор</div>
+                        <div class="team-details">Стаж: 15 лет<br>Образование: МГТУ им. Н.Э. Баумана</div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="./style/images/employee1.jpg" alt="Сотрудник" class="team-image">
+                    <div class="team-info">
+                        <div class="team-name">Петр Петров</div>
+                        <div class="team-position">Главный инженер</div>
+                        <div class="team-details">Стаж: 10 лет<br>Образование: СПбГАСУ</div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="./style/images/employee2.png" alt="Сотрудник" class="team-image">
+                    <div class="team-info">
+                        <div class="team-name">Анна Смирнова</div>
+                        <div class="team-position">Менеджер по продажам</div>
+                        <div class="team-details">Стаж: 8 лет<br>Образование: НИУ ВШЭ</div>
+                    </div>
+                </div>
+                <!-- Добавьте больше карточек по мере необходимости -->
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2024 ZMK TRADE. Все права защищены.
+    </footer>
+</body>
+</html>
