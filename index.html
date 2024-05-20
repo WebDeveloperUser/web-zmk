@@ -12,11 +12,14 @@
             background-color: #fff;
             color: #000;
             scroll-behavior: smooth;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #000;
             color: #fff;
-            padding: 20px 0;
+            padding: 10px 0;
             text-align: center;
             position: relative;
         }
@@ -40,7 +43,7 @@
             color: #e60000;
         }
         .hero {
-            background: url('hero.jpg') no-repeat center center/cover;
+            background: url('https://unsplash.com/photos/r2iDVhfFUMI/download?force=true&w=1920') no-repeat center center/cover;
             height: 400px;
             display: flex;
             justify-content: center;
@@ -56,6 +59,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            flex: 1;
         }
         .section {
             padding: 40px 0;
@@ -93,12 +97,15 @@
             color: #fff;
             text-align: center;
             padding: 20px 0;
+            margin-top: auto;
+            position: relative;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="./style/images/logo.jpg" alt="ZMK TRADE Logo">
+        <img src="logo.png" alt="ZMK TRADE Logo">
         <h1>ZMK TRADE</h1>
         <p>Кровельные и фасадные материалы</p>
         <nav>
